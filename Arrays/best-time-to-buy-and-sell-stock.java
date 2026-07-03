@@ -1,3 +1,15 @@
+/*
+Problem: Best Time to Buy and Sell Stock
+Pattern: Two Pointers
+Difficulty: Easy
+
+Key Insight:
+Keep track of the minimum price seen so far.
+Whenever a smaller price appears, make it the new buying day.
+
+Time: O(n)
+Space: O(1)
+*/
 class Solution {
     public int maxProfit(int[] prices) {
         int buy_day=0;
