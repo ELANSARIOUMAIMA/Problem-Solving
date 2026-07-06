@@ -47,6 +47,7 @@ s.substring(1,4);  // "ell"
 # Arrays
 
 ```java
+char[] b = t.toCharArray();
 Arrays.sort(nums);
 
 Arrays.fill(nums,0);
