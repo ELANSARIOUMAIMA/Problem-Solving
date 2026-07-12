@@ -150,6 +150,7 @@ list.contains(x);
 # Queue
 
 ```java
+Queue<Character> queue = new LinkedList<>();
 offer();
 
 poll();
