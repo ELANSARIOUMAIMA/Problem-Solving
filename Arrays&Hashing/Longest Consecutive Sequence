@@ -1,0 +1,30 @@
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        HashSet <Integer> set=new HashSet<>();
+        
+        for(int num:nums){
+            if(!set.contains(num)){
+                set.add(num);
+            } 
+        }
+
+        int longest=0;
+
+        for(int num:set){
+            if(!set.contains(num-1)){
+                int length=1;
+                while(set.contains(num+length)){
+                    length++;
+                }
+                longest=Math.max(longest,length);
+
+            }
+        }
+        
+        return longest;
+
+        //For each number, check if the previous number exists:
+        //If n - 1 is missing, then n must be the start of a consecutive sequence.
+        
+    }
+}
